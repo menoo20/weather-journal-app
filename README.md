@@ -2,6 +2,7 @@
   <a href="" rel="noopener">
 </p>
 <img align="center" width="80% src="./website/images/app-img.png">
+ <img src="./website/images/app-img.png" alt="My cool app"/>
 <h3 align="center">weather-journal</h3>
 
 <div align="center">
