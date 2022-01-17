@@ -1,0 +1,44 @@
+.inputs{
+    background: linear-gradient(to left, #5a0053f7, #7a00ff);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0,0.3);
+    .user-input{
+   
+        .input-group{
+            z-index:0;
+            span,input,textarea{
+                border-radius: 10px;
+                background-color: transparent;
+                font-size:1.4rem;
+                color: white;
+                transition: all 0.4s ease-in-out;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            input{
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.693);
+                    font-size:1.4rem;
+                }
+                &.form-control:focus{
+                    border: transparent;
+                    transition: all 0.4s ease-in-out;
+                    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+                    z-index: 1;
+                }
+            }
+            textarea{
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.792);
+                    font-size:1.4rem;
+                }
+                &.form-control:focus{
+                    border: transparent;
+                    transition: all 0.4s ease-in-out;
+                    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+             
+                }
+            }
+        }
+    }
+}

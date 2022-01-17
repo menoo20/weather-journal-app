@@ -1,0 +1,42 @@
+@import "weather-card";
+@import "weather-info";
+@import "mixins";
+@import "button";
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("./images/pexels-pratik-gupta-2748716.jpg");
+        background-size:cover;
+        background-position: center center;
+        background-attachment: scroll;
+        opacity: .3;
+        z-index: -1;
+    }
+};
+
+.container{
+    max-width: 90%;
+}
+
+
+body{
+    display: block !important;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+  }

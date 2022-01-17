@@ -1,0 +1,263 @@
+.inputs {
+  background: -webkit-gradient(linear, right top, left top, from(#5a0053f7), to(#7a00ff));
+  background: linear-gradient(to left, #5a0053f7, #7a00ff);
+  padding: 3rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.inputs .user-input .input-group {
+  z-index: 0;
+}
+
+.inputs .user-input .input-group span, .inputs .user-input .input-group input, .inputs .user-input .input-group textarea {
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: white;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.inputs .user-input .input-group input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.693);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.693);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.693);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.693);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group input.form-control:focus {
+  border: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+          box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+  z-index: 1;
+}
+
+.inputs .user-input .input-group textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 1.4rem;
+}
+
+.inputs .user-input .input-group textarea.form-control:focus {
+  border: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+          box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.59) !important;
+}
+
+.weather-info {
+  padding-top: 3rem;
+  opacity: 0;
+  -webkit-transition: opacity 1.5s linear;
+  transition: opacity 1.5s linear;
+}
+
+.weather-info img {
+  width: 75px;
+}
+
+.weather-info .weather-data {
+  background-color: inherit;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  font-size: 1.4rem;
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info .weather-data .api-input {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 2.5s ease-in-out;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.weather-info .weather-data h4 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.weather-info .weather-data .readings h1 {
+  font-size: 6rem;
+}
+
+.weather-info .weather-data .readings p {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.glow-on-hover {
+  width: 150px;
+  height: 150px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.788);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-style: italic;
+  background: -webkit-gradient(linear, right top, left top, from(#5a0053f7), to(#7a00ff));
+  background: linear-gradient(to left, #5a0053f7, #7a00ff);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+  font-size: 2rem;
+  top: -55px;
+  right: -55px;
+}
+
+@media (max-width: 599px) {
+  .glow-on-hover {
+    width: 90px;
+    height: 90px;
+    font-size: 1rem;
+    top: -25px;
+    right: -25px;
+  }
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  border-radius: 50%;
+}
+
+.glow-on-hover:active {
+  color: rgba(255, 255, 255, 0.241);
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("./images/pexels-pratik-gupta-2748716.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  opacity: .3;
+  z-index: -1;
+}
+
+.container {
+  max-width: 90%;
+}
+
+body {
+  display: block !important;
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

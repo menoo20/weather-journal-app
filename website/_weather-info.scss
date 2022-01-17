@@ -1,0 +1,39 @@
+.weather-info{
+    padding-top: 3rem;
+    opacity: 0;
+    transition: opacity 1.5s linear;
+    
+    img{
+        width: 75px;
+    }
+    .weather-data{
+        background-color: inherit;
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        font-size:1.4rem;
+        color: white;
+        padding: 3rem;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0,0.3);
+        .api-input{
+            display: none;
+            opacity: 0;
+            transition: opacity 2.5s ease-in-out;        }
+        h4{
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+        .readings{
+            h1{
+                font-size: 6rem;
+            }
+            p{
+                font-size: 1.5rem;
+                letter-spacing:2px;
+            }
+    
+        }
+    }
+}

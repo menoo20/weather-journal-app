@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Weather Journal</title>
+</head>
+<body style="display:none; opacity: 0">
+    <div class="container py-5 text-center ">
+        <h1 class="display-4 mt-1">Weather Journal</h1>
+        <div class="weather-card pt-5 ">
+            <div class="row align-items-center justify-content-center ">
+                <div class="inputs col-9 col-md-7 mb-5 mb-md-0 position-relative">
+                    <div class="user-input ">
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text" id="country-code">country</span>
+                            <input type="text" aria-label="country" class="form-control" aria-describedby="country-code" id="country"  placeholder="us/eg/ksa ">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text">Zip <span style="color: red;border:transparent"> *</span></span>
+                            <input type="text" class="form-control" aria-label="zip" aria-describedby="zip" id="zip"  placeholder="zip code of the city">
+                          </div>
+
+
+                        <div class="input-group input-group-lg text text-start mt-3">
+                            <!-- <span class="input-group-text">What do you feel ?</span> -->
+                            <textarea class="form-control " aria-label="With textarea" id="feelings" placeholder="what do you feel?"></textarea>
+                        </div>
+                        <button type="button" class="generate glow-on-hover position-absolute" id="generate">Generate</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-info row justify-content-center align-items-center mt-5 pb-5">
+            <div class="weather-data col-8 col-md-6">
+                <div class="api-input  flex-column flex-md-row justify-content-md-between justify-content-center">
+                  <div class="place-date text-center text-md-start ps-3">
+                      <h2 class="city" id="city"> </h2></span>
+                      <p class="date" id="date"></p>
+                      <img 
+                      src="https://freepngimg.com/thumb/weather/23698-6-weather-transparent-background.png"
+                      alt="Sun Half visible ahead of Clouds"
+                         class = "cloudy-img img-fluid"
+                    />
+                    <h4 class="weather mt-4" id="weather"></h4>
+                  </div>
+                  <div class="readings text-center me-3">
+                      <h1 class="display-1 temp" id="temp"></h1>
+                      <p class="content" id="content"></p>
+                  </div>
+                </div>
+                <div class="error text-center text-capitalize">
+                    <p class="message" id="message"></p>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
